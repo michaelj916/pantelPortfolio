@@ -21,17 +21,17 @@ function cursorHover(e) {
         scale: 0.5
     });
     gsap.to($cursorHover, {
-       scale: 3
+       scale: 1.5
     });
 }
 
 // normal cursor
 function cursor(e) {
     gsap.to($cursor, {
-        scale: 1
+        scale: .4
     });
     gsap.to($cursorHover, {
-       scale: 1
+       scale: .4
     });
 }
 

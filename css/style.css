@@ -6,7 +6,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 }
 
 body {
-    font-family: fredoka;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f8f8f8;
     
 }
@@ -88,7 +88,7 @@ a {
 }
 
 .contact:hover {
-    color: #736ea786;
+    color: #736ea7b4;
 }
 
 @media
