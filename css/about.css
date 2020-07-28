@@ -20,8 +20,8 @@ a {
     width: 20px;
     height: 20px;
     display: inline-block;
-    background-color: #000;
-    border: 0.1em solid #000;
+    background-color: #2e2e2e;
+    border: 0.1em solid #2e2e2e;
     border-radius: 50%;
     pointer-events: none;
     position: fixed;
@@ -36,7 +36,7 @@ a {
     height: 20px;
     display: inline-block;
     background-color: transparent;
-    border: 0.001em solid #000;
+    border: 0.001em solid #2e2e2e;
     border-radius: 50%;
     pointer-events: none;
     position: fixed;

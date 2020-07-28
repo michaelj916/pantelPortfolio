@@ -18,10 +18,10 @@ function cursorMover(e) {
 
 function cursorHover(e) {
     gsap.to($cursor, {
-        scale: 0.1
+        scale: 0.08
     });
     gsap.to($cursorHover, {
-       scale: 1.5
+       scale: 2
     });
 }
 
