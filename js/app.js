@@ -6,7 +6,7 @@ function cursorMover(e) {
     gsap.to($cursor, {
         x: e.clientX,
         y: e.clientY,
-        stagger: 0.002,
+        stagger: 0.2,
     });
     gsap.to($cursorHover, {
         x: e.clientX,
@@ -18,7 +18,7 @@ function cursorMover(e) {
 
 function cursorHover(e) {
     gsap.to($cursor, {
-        scale: 0.5
+        scale: 0.1
     });
     gsap.to($cursorHover, {
        scale: 1.5
@@ -28,10 +28,10 @@ function cursorHover(e) {
 // normal cursor
 function cursor(e) {
     gsap.to($cursor, {
-        scale: .4
+        scale: .35
     });
     gsap.to($cursorHover, {
-       scale: .4
+       scale: .35
     });
 }
 
