@@ -45,3 +45,30 @@ a {
     left: -8px;
     transform: translate(-8px, -8px);
 }
+
+#wrapper {
+    position: relative;
+    max-width: 80%; 
+    margin: 0 auto; /* Centering the whole */     
+  }
+  #container {
+    width: 100%; 
+    margin: 0 auto ; /*Centering */     
+    position: relative;
+  }
+
+  .item {
+    margin: 10px; 
+    width: 140px; 
+    padding: 8px; 
+    border: 1px solid #b3b3b3ea; 
+  }
+  .item .x2 {
+    width: 320px; 
+  }
+  .item .x3 {
+    width: 500px; 
+  }
+  .item Img {
+    width: 100%; 
+  }
