@@ -306,35 +306,7 @@ a {
     transform: translate(-50%, -50%); 
 }
 
-.cursor {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: #2e2e2e;
-    border: 0.1em solid #2e2e2e;
-    border-radius: 50%;
-    pointer-events: none;
-    position: fixed;
-    z-index: 999;
-    top: -8px;
-    left: -8px;
-    transform: translate(-8px, -8px);
-}
 
-.cursorHover {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: transparent;
-    border: 0.0001em solid #2e2e2e;
-    border-radius: 50%;
-    pointer-events: none;
-    position: fixed;
-    z-index: 999;
-    top: -8px;
-    left: -8px;
-    transform: translate(-8px, -8px);
-}
 
 .name {
     /* font-size: 6vw; */
@@ -371,4 +343,23 @@ a {
 
 .contact:hover {
     color: #736ea765;
+}
+
+.nav {
+    position: fixed;
+    bottom: 4vh;
+    width: 100%;
+    color: #242424c9;
+    text-align: center;
+    font-weight: 900;
+    z-index: 1000;
+    font-size: 26px;
+}
+
+.nav a {
+    padding: 3%;
+}
+
+.active {
+    color: #242424ea;
 }
