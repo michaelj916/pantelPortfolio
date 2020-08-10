@@ -6,6 +6,7 @@
     <title>LUCAS PANTEL</title>
     <link rel="stylesheet" href="../css/work.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <link rel="icon" href="../img/icon/favicon.ico">
 
@@ -41,14 +42,21 @@
           font-size: 26px;
 
       }
+      
       * {
         box-sizing: border-box;
-        overflow-x: hidden;
       }
+
+      /* ---- grid ---- */
+
       .grid {
+        overflow: auto;
+        background: transparent;
+        width: 100%;
         transform: translateY(60px);
-        left: 8%;
-        align-items: center;
+        padding: 5%;
+        justify-content: center;
+        overflow-y: hidden;
       }
 
       /* clearfix */
@@ -60,105 +68,95 @@
 
       /* ---- grid-item ---- */
 
-      .grid-sizer,
       .grid-item {
-        width: 20%;
-      }
-
-      .grid-item img {
-        height: 500px;
+        width: 320px;
+        height: 200px;
         float: left;
-        margin-bottom: 25px;
+        /* vertical gutter */
+        margin-bottom: 20px;
+        background: #ec99b7c5;
+        border: 2px solid #5f4c4c8e;
+        border-color: #978c8c25;
+        border-radius: 5px;
       }
 
-      .grid-item--width2 { width:  40%; }
-      .grid-item--width3 { width:  60%; }
+      .grid-item--width2 { width: 340px; }
+      .grid-item--width3 { width: 520px; }
+      .grid-item--width4 { width: 780px; }
 
       .grid-item--height2 { height: 200px; }
       .grid-item--height3 { height: 260px; }
       .grid-item--height4 { height: 360px; }
 
+      @media screen and (max-width: 600px) {
+        .grid-item {
+          float: none;
+        }
+      }
+
+
+      
     </style>
 
     <div class="grid">
-      <div class="grid-sizer"></div>
-
-      <div class="grid-item">
-        <img src="../img/work/books.jpg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/dog.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/hand.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/kitchen.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/strawberry.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/books.jpg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/dog.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/hand.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/kitchen.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/strawberry.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/books.jpg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/dog.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/hand.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/kitchen.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/strawberry.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/books.jpg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/dog.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/hand.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/kitchen.jpeg" alt="">
-      </div>
-      <div class="grid-item">
-        <img src="../img/work/strawberry.jpeg" alt="">
-      </div>
-      
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+      <div class="grid-item grid-item--height3"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item grid-item--width3"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item grid-item--width2 grid-item--height3"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+      <div class="grid-item grid-item--width2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height3"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+      <div class="grid-item grid-item--height3"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item grid-item--width3"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item grid-item--width2 grid-item--height3"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--width2 grid-item--height2"></div>
+      <div class="grid-item grid-item--width2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height3"></div>
+      <div class="grid-item grid-item--height2"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item grid-item--height2"></div>
     </div>
 
     <div id='message'>WELCOME TO THE GALLERY <br> <a href="https://michaelj916.github.io/pantelPortfolio/index.html" style="color: rgba(15, 15, 15, 0.787); cursor: pointer; text-decoration:none;">GO HOME</a> </div>
   
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script>
       $('.grid').masonry({
-        
         itemSelector: '.grid-item',
-        gutter: 25,
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-
+        columnWidth: 160,
+        gutter: 20
       });
     </script>
 
