@@ -6,166 +6,121 @@
     <title>LUCAS PANTEL</title>
     <link rel="stylesheet" href="../css/work.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
     <link rel="icon" href="../img/icon/favicon.ico">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
-    <style>
+    
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="title">Gallery</div>
+        <div class="gallery">
 
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-          "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-          sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        background-color: #e6e6e6;
-      }
+          <a href="../img/gallery/5-min.JPG" class="image">
+            <img src="../img/gallery/5-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/8-min.JPG" class="image">
+            <img src="../img/gallery/8-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/9-min.JPG" class="image">
+            <img src="../img/gallery/9-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/10-min.JPG" class="image">
+            <img src="../img/gallery/10-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/16-min.JPG" class="image">
+            <img src="../img/gallery/16-min.JPG" alt="">
+          </a>
 
-      code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-          monospace;
-      }
+          <a href="../img/gallery/0.jpg" class="image"> 
+            <img src="../img/gallery/0.jpg" alt="">
+          </a>
+          <a href="../img/gallery/1-min.JPG" class="image">
+            <img src="../img/gallery/1-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/2-min.JPG" class="image">
+            <img src="../img/gallery/2-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/3-min.JPG" class="image">
+            <img src="../img/gallery/3-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/4-min.JPG" class="image">
+            <img src="../img/gallery/4-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/6-min.JPG" class="image">
+            <img src="../img/gallery/6-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/7-min.JPG" class="image">
+            <img src="../img/gallery/7-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/11-min.JPG" class="image">
+            <img src="../img/gallery/11-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/12-min.JPG" class="image">
+            <img src="../img/gallery/12-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/13-min.JPG" class="image">
+            <img src="../img/gallery/13-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/14-min.JPG" class="image">
+            <img src="../img/gallery/14-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/15-min.JPG" class="image">
+            <img src="../img/gallery/15-min.JPG" alt="">
+          </a>
+          
+          <a href="../img/gallery/17-min.JPG" class="image">
+            <img src="../img/gallery/17-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/18-min.JPG" class="image">
+            <img src="../img/gallery/18-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/19-min.JPG" class="image">
+            <img src="../img/gallery/19-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/20-min.JPG" class="image">
+            <img src="../img/gallery/20-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/21-min.JPG" class="image">
+            <img src="../img/gallery/21-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/22-min.JPG" class="image">
+            <img src="../img/gallery/22-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/23-min.JPG" class="image">
+            <img src="../img/gallery/23-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/24-min.JPG" class="image">
+            <img src="../img/gallery/24-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/25-min.JPG" class="image">
+            <img src="../img/gallery/25-min.JPG" alt="">
+          </a>
+          <a href="../img/gallery/26-min.JPG" class="image">
+            <img src="../img/gallery/26-min.JPG" alt="">
+          </a>
 
-      #message {
-
-          position: fixed;
-          bottom: 4vh;
-          width: 100%;
-          color: #242424de;
-          text-align: center;
-          font-weight: 900;
-          z-index: 1000;
-          font-size: 26px;
-
-      }
-      
-      * {
-        box-sizing: border-box;
-      }
-
-      /* ---- grid ---- */
-
-      .grid {
-        overflow: auto;
-        background: transparent;
-        width: 100%;
-        transform: translateY(60px);
-        padding: 5%;
-        justify-content: center;
-        overflow-y: hidden;
-      }
-
-      /* clearfix */
-      .grid:after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-
-      /* ---- grid-item ---- */
-
-      .grid-item {
-        width: 320px;
-        height: 200px;
-        float: left;
-        /* vertical gutter */
-        margin-bottom: 20px;
-        background: #ec99b7c5;
-        border: 2px solid #5f4c4c8e;
-        border-color: #978c8c25;
-        border-radius: 5px;
-      }
-
-      .grid-item img {
-        width: 50%;
-        height: auto;
-      }
-
-      .grid-item--width2 { width: 340px; }
-      .grid-item--width3 { width: 520px; }
-      .grid-item--width4 { width: 780px; }
-
-      .grid-item--height2 { height: 200px; }
-      .grid-item--height3 { height: 260px; }
-      .grid-item--height4 { height: 360px; }
-
-      @media screen and (max-width: 600px) {
-        .grid-item {
-          float: none;
-        }
-      }
-
-
-      
-    </style>
-
-    <div class="grid">
-      <div class="grid-item"><img src="../img/gallery/0.gif" alt=""></div>
-      <div class="grid-item grid-item--width2 grid-item--height2"><img src="../img/gallery/1-min.JPG" alt=""></div>
-      <div class="grid-item grid-item--height3"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width3"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width2 grid-item--height3"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--width2 grid-item--height2"></div>
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height3"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--width2 grid-item--height2"></div>
-      <div class="grid-item grid-item--height3"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width3"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item grid-item--width2 grid-item--height3"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--width2 grid-item--height2"></div>
-      <div class="grid-item grid-item--width2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height3"></div>
-      <div class="grid-item grid-item--height2"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item grid-item--height2"></div>
-    </div>
+        </div>
+      </div>
+    </div> 
 
     <div class="nav">
       <a href="#" class="active">Work</a>
       <a href="contact.html">contact</a>  
       <a href="about.html">about</a>
-  </div>
-  
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+      <a target="active" href="https://beansworldwide.com/bwmedia/stock/index.html">ZBUX</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
-      $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 160,
-        gutter: 20
+      $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled:true
+        }
       });
     </script>
 
