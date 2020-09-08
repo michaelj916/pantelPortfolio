@@ -49,8 +49,13 @@ code {
 @media screen and (max-width:768px) {
   .gallery {
     position: absolute;
-    top: 76px;
-    width: px;
+    top: 40px;
+    width: 9040px;
   }
+
+  .gallery img {
+    width: 320px;
+  }
+
 }
 
