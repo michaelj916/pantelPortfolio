@@ -278,7 +278,7 @@ html:not(.is-firefox):not(.is-ie11):not(.is-edge) body:before {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #dedede;
+    background: #88888838;
   }
   
 /* Handle on hover */
