@@ -23,3 +23,15 @@ a {
     font-weight: 800;
     color: rgb(31, 30, 30);
 }
+
+.email a:hover {
+    color: #000000d8;
+}
+
+.yt:hover {
+    color: #c4302b;
+}
+
+.ig:hover {
+    color: #405ce6d8;
+}
