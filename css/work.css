@@ -33,7 +33,7 @@ code {
 }
 
 .gallery {
-  width: 10000px;
+  width: 8550px;
   position: absolute;
   top: 18%;
   left: 70px;
@@ -50,7 +50,7 @@ code {
   .gallery {
     position: absolute;
     top: 40px;
-    width: 9040px;
+    width: 6800px;
   }
 
   .gallery img {
