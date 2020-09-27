@@ -395,7 +395,7 @@ a {
     position: fixed;
     bottom: 4vh;
     width: 100%;
-    color: #242424;
+    color: #0f0f0fee;
     text-align: center;
     font-weight: 900;
     z-index: 1000;
@@ -407,11 +407,11 @@ a {
 }
 
 .nav a:hover {
-     color: #242424
+     color: #000000
 }
 
 .active {
-    color: #242424ea;
+    color: #000000;
 }
 
 @media screen and (min-width: 601px) {
