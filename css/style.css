@@ -305,14 +305,6 @@ a {
 
  
 
-.wrapper {
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -35%); 
-}
 
 .gif {
     position: fixed;
