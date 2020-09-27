@@ -302,33 +302,34 @@ a {
 }
 
 
-  @media screen and (min-width: 601px) {
-    body {
-      font-size: 80px;
-    }
-  }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
-    body {
-      font-size: 60px;
-    }
-  }
+ 
 
 .wrapper {
     margin: 0;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -35%); 
 }
 
-
+.gif {
+    position: fixed;
+    user-select: none;
+    width: 40%;
+    height: auto;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: -10;
+}
 
 .name {
     /* font-size: 6vw; */
+    display: inline-block;
     font-weight: 800;
+    /* font-size: 60px; */
     color: #000000b6;
 }
 
@@ -340,17 +341,44 @@ a {
 
 .work:hover {
     transition: ease-in;
-    color: #f6e583b6;
+    color: #f6e58386;
+}
+
+.beans {
+    color: #241313ce;
+    font-weight: 900;
+}
+
+.beans:hover {
+    color: #241313a9;
+}
+
+.vid {
+    color: #eeadadb6;
+    font-weight: 900;
+}
+
+.vid:hover {
+    color: #eeadad7a;
+}
+
+.mag {
+    color: #c7b198;
+    font-weight: 900;    
+}
+
+.mag:hover {
+    color: #c7b198b6
 }
 
 .abt {
     /* font-size: 6vw; */
-    color: #8fe4ecbe;
+    color: #add9ddbe;
     font-weight: 900;
 }
 
 .abt:hover {
-    color: #a4e5eba1;
+    color: #add9dd73;
 }
 
 .contact{
@@ -385,3 +413,26 @@ a {
 .active {
     color: #242424ea;
 }
+
+@media screen and (min-width: 601px) {
+    body {
+      font-size: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 60px;
+    }
+    .gif {
+        bottom: 0;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .name {
+        font-size: 40px;
+    }
+  }
