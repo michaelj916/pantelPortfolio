@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #012049 !important;
+  user-select: none;
 }
 
 code {
@@ -27,7 +28,7 @@ code {
 .title {
   font-weight: 800;
   z-index: 10;
-  color: #242424d0;
+  color: #00316F;
   position: fixed;
   left: 20px;
 }
@@ -45,6 +46,8 @@ code {
   margin-right: 0;
   width: 400px;
 }
+
+
 
 @media screen and (max-width:768px) {
   .gallery {

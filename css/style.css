@@ -398,6 +398,7 @@ a {
     color: #0f0f0fee;
     text-align: center;
     font-weight: 900;
+    line-height: 46px;
     z-index: 1000;
     font-size: 26px;
 }
