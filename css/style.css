@@ -294,6 +294,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -318,7 +319,7 @@ a {
     user-select: none;
     width: 40%;
     height: auto;
-    bottom: -14px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
@@ -415,6 +416,80 @@ a {
     color: #000000;
 }
 
+/* 
+.link img {
+    display: none;
+} */
+
+/* TESTER DESIGN */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.app {
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+.link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  
+  .link img {
+    display: none;
+  }
+  
+  .grid {
+    position: absolute;
+    z-index: 3;
+  }
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    pointer-events: none;
+}
+
 @media screen and (min-width: 601px) {
     body {
       font-size: 80px;
@@ -437,3 +512,5 @@ a {
         font-size: 40px;
     }
   }
+
+
