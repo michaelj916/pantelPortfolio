@@ -3,7 +3,7 @@ class TrailsEffect extends EffectShell {
       super(container, itemsWrapper)
       if (!this.container || !this.itemsWrapper) return
   
-      options.strength = options.strength || 0.25
+      options.strength = options.strength || .25
       options.amount = options.amount || 5
       options.duration = options.duration || 0.5
       this.options = options
