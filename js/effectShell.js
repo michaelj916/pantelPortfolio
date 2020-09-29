@@ -174,10 +174,21 @@ class EffectShell {
       // convert NodeList to Array
       const items = [...this.itemsWrapper.querySelectorAll('.link')]
   
+      // generate a random int between ( min , max )
+      function rand(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+      }
+
+      // create num to switch between array value 1 & 2 for the children node in the img
+      // under items.map() 
+      const num = rand(1, 10);
+
       //create Array of items including element, image and index
       return items.map((item, index) => ({
         element: item,
-        img: item.querySelector('.content__img'),
+        img: item.children[num],
         index: index
       }))
     }
