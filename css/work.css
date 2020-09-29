@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #012049 !important;
-  user-select: none;
+  /* user-select: none; */
 }
 
 code {
@@ -17,11 +17,11 @@ code {
     monospace;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* -- gallery -- */
 
@@ -50,10 +50,20 @@ code {
 
 
 @media screen and (max-width:768px) {
+  * {
+    overflow: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
   .gallery {
     position: absolute;
     top: 40px;
     width: 6800px;
+  }
+
+  .nav {
+    position: fixed;
   }
 
   .gallery img {
