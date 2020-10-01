@@ -1,8 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    position: fixed;
+
 }
 
+.container {
+    height: 1200px;
+    overflow-y: scroll;
+}
 
 .title {
     font-weight: 800;
@@ -27,5 +34,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    opacity: 85%;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: max-content;
+
+    }
+    
+    .fluidMedia iframe {
+        top: 70px;
+        height: 110%;
+        padding-bottom: 27px;
+    }
 }
