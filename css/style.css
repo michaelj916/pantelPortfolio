@@ -319,15 +319,15 @@ a {
 }
 
 .name {
-    /* font-size: 6vw; */
-    display: inline-block;
     font-weight: 800;
-    /* font-size: 60px; */
+    position: relative;
+    display: inline-flex;
     color: #000000b6;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .work {
-    /* font-size: 6vw; */
     color: #fde661c2;
     font-weight: 900;
 }
@@ -449,7 +449,8 @@ a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
