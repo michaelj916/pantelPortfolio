@@ -51,7 +51,7 @@ code {
 
 @media screen and (max-width:768px) {
   * {
-    overflow: none;
+    overflow: scroll;
     user-select: none;
     -webkit-user-select: none;
   }
@@ -60,6 +60,7 @@ code {
     position: absolute;
     top: 40px;
     width: 6800px;
+    overflow-y: none;
   }
 
   .nav {
