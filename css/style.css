@@ -489,12 +489,18 @@ canvas {
     body {
       font-size: 80px;
     }
+    .grid {
+        top: 150px;
+    }
   }
   
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 768px) {
     body {
       font-size: 60px;
+    }
+    .grid {
+        top: 65px;
     }
     .gif {
         bottom: 0;
