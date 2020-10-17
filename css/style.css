@@ -328,13 +328,13 @@ a {
 }
 
 .work {
-    color: #fde661c2;
+    color: #8a0829e1;
     font-weight: 900;
 }
 
 .work:hover {
     transition: ease-in;
-    color: #f6e58386;
+    color: #8a0828a9;
 }
 
 .beans {

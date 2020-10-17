@@ -28,7 +28,8 @@ code {
 .title {
   font-weight: 800;
   z-index: 10;
-  color: #00316F;
+  color: #00316F; 
+  /* color: #8A0829; */
   position: fixed;
   left: 20px;
 }
