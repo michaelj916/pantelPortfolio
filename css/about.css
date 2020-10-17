@@ -68,7 +68,13 @@ img {
 
 @media screen and (max-height: 1000px) {
   img {
-    width: 45%;
+    width: 40%;
+  }
+  .luca1 {
+    bottom: 22%;
+  }
+  .luca2 {
+    bottom: 22%;
   }
 }
   

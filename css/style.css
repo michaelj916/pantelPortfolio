@@ -506,6 +506,9 @@ canvas {
         bottom: 0;
         width: 100%;
     }
+    .content__img {
+        display: none;
+    }
   }
 
   @media screen and (max-width: 980px) {
