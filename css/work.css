@@ -35,7 +35,7 @@ code {
 }
 
 .gallery {
-  width: 8550px;
+  width: 12350px; /* (numberOfImgs * 400) + 550 */ 
   position: absolute;
   top: 18%;
   left: 70px;
@@ -60,7 +60,7 @@ code {
   .gallery {
     position: absolute;
     top: 40px;
-    width: 6800px;
+    width: 9680px; /* (numOfImgs * 320) + 400 */
     overflow-y: none;
   }
 
